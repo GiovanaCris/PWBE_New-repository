@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Blog teste Gigi</title>
+</head>
+<body>
+    <h1>MEU BLOG</h1>
+    <P>Sejam bem vindos ao meu blog amigos!!</P>
+
+    <ul>
+        {% for i in postagens %}
+            <li>
+                <h2>{{i.titulo}}</h2>
+                <p>{{i.conteudo}}</p>
+            </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
